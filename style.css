@@ -1,0 +1,42 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  font-family: "Josefin Sans", "Arial", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.title {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 0 10px #02c, 0 0 40px #48f, 0 0 80px #8af;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #eee;
+}

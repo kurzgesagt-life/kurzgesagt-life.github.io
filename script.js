@@ -97,7 +97,6 @@ function fade() {
 
 window.onload = function () {
   window.onresize = () => init();
-  window.addEventListener("click", () => init());
   init();
   loop();
 };

@@ -54,7 +54,8 @@ span {
 .description{
   position: relative;
   font-size: 30px;
-  left: 15%;
+  left: 10%;
+  top: 30%;
   display: none;
   color:  #fff;
   font: "gilroyextrabold";

@@ -1,19 +1,22 @@
+
+
 html,
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 body {
   font-family: "Josefin Sans", "Arial", sans-serif;
-  background: #000;
+  background: #002;
   color: #fff;
 }
 
 .title {
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   z-index: 10;
@@ -33,10 +36,26 @@ h1 {
   text-shadow: 0 0 10px #02c, 0 0 40px #48f, 0 0 80px #8af;
 }
 
+canvas{
+  position: relative;
+}
+
+
 span {
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 300;
   color: #eee;
+}
+
+.description{
+  text-align: left;
+  font-size: 30px;
+  left: 15%;
+  position: relative;
+  color:  #fff;
+  font: "Josefin Sans";
+  background: #002;
+  
 }

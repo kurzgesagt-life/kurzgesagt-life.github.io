@@ -1,5 +1,5 @@
 // Controls
-const prtclMax = 500;
+const prtclMax = 100;
 const prtclRad = 1.5;
 const prtclDel = 80;
 const prtclSpd = 0.5;
@@ -72,7 +72,7 @@ function addParticles(num) {
 function destroy_animation() {
     stopAnimation = 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    title.parentNode.removeChild(title);
+    if (title.parentNode != null) {title.parentNode.removeChild(title);}
     particles = [];
 }
 

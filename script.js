@@ -76,6 +76,7 @@ function destroy_animation() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles = [];
     setTimeout(() => {$(".description").fadeIn("slow");}, 1000);
+    $("#description").fadeOut("slow");
 }
 
 function init() {

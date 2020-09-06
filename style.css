@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'gilroyextrabold';
-    src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
-         url('gilroy-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html,
@@ -17,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  font-family: "gilroyextrabold", "gilroyextrabold", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   background: #002;
   color: #fff;
 }
@@ -56,7 +48,7 @@ span {
   position: relative;
   font-size: 30px;
   left: 10%;
-  top: 30%;
+  top: 40%;
   display: none;
   color:  #fff;
   font-family: 'Lato', sans-serif;

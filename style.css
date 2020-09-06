@@ -36,11 +36,6 @@ h1 {
   text-shadow: 0 0 10px #02c, 0 0 40px #48f, 0 0 80px #8af;
 }
 
-canvas{
-  position: relative;
-}
-
-
 span {
   padding: 0;
   margin: 0;
@@ -56,7 +51,6 @@ span {
   left: 30%;
   top: 30%;
   display: none;
-  position: relative;
   color:  #fff;
   font-family: sans-serif;
   background: #002;

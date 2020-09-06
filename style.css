@@ -29,6 +29,10 @@ body {
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   user-select: none;
+  transition-duration:1s
+}
+.title:checked{
+    opacity: none;
 }
 
 h1 {

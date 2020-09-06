@@ -52,6 +52,7 @@ span {
 }
 
 .description{
+  position: relative;
   font-size: 30px;
   left: 15%;
   display: none;

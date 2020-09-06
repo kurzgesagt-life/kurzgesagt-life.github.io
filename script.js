@@ -10,9 +10,11 @@ const prtclCol0 = "#04f";
 const prtclCol1 = "#026";
 const prtclCol2 = "#f04";
 
+var title = document.getElementsByClassName('title')[0];
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let ctx = canvas.getContext("2d");
+var stopAnimation = 0;
 
 let particles = [];
 
@@ -67,6 +69,13 @@ function addParticles(num) {
   }
 }
 
+function destroy_animation() {
+    stopAnimation = 1;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    title.parentNode.removeChild(title);
+    particles = [];
+}
+
 function init() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -77,9 +86,13 @@ function init() {
 
 function loop() {
   particles = particles.filter((p) => p.update());
-  particles.forEach((p) => p.render());
+  particles.forEach((p) => {
+      p.render();
+  });
   fade();
-  requestAnimationFrame(loop);
+  if (stopAnimation != 1) {
+      requestAnimationFrame(loop);
+  }
 }
 
 function clear() {
@@ -97,7 +110,7 @@ function fade() {
 
 window.onload = function () {
   window.onresize = () => init();
-  window.addEventListener("click", () => init());
+  window.addEventListener('click',() => destroy_animation())
   init();
   loop();
 };

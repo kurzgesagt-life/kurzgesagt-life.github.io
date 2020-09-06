@@ -72,7 +72,7 @@ function addParticles(num) {
 function destroy_animation() {
     stopAnimation = 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    title.parentNode.removeChild(title);
+    if (title.parentNode != null) {title.parentNode.removeChild(title);}
     particles = [];
 }
 

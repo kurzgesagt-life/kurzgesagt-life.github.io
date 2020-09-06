@@ -76,7 +76,10 @@ function destroy_animation() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles = [];
     setTimeout(() => {$(".description").fadeIn("slow");}, 1000);
-    $("#description").fadeOut("slow");
+
+}
+function fade_out_description() {
+    setTimeout(() => {$("#description").fadeOut("slow");},5000);
 }
 
 function init() {
@@ -114,6 +117,7 @@ function fade() {
 window.onload = function () {
   window.onresize = () => init();
   window.addEventListener('click',() => destroy_animation())
+  window.addEventListener('click',() => fade_out_description())
   init();
   loop();
 };

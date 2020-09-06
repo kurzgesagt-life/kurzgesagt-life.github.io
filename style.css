@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html,
 body {
   width: 100vw;
@@ -6,7 +14,7 @@ body {
   overflow: hidden;
 }
 body {
-  font-family: "Josefin Sans", "Arial", sans-serif;
+  font-family: "gilroyextrabold", "gilroyextrabold", sans-serif;
   background: #000;
   color: #fff;
 }

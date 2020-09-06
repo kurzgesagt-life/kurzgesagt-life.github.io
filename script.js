@@ -74,6 +74,7 @@ function destroy_animation() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (title.parentNode != null) {title.parentNode.removeChild(title);}
     particles = [];
+    $(".description").fadeIn();
 }
 
 function init() {

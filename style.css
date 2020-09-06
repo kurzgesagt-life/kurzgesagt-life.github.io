@@ -53,9 +53,10 @@ span {
   text-align: left;
   font-size: 30px;
   left: 15%;
+  display: none;
   position: relative;
   color:  #fff;
   font: "Josefin Sans";
   background: #002;
-  
+
 }

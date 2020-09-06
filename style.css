@@ -51,12 +51,33 @@ span {
 
 .description{
   text-align: left;
+  text-anchor: middle;
   font-size: 30px;
-  left: 15%;
+  left: 30%;
+  top: 30%;
   display: none;
   position: relative;
   color:  #fff;
-  font: "Josefin Sans";
+  font-family: sans-serif;
   background: #002;
 
+}
+
+.description ul{
+  list-style-type: none;
+  float: left;
+  width: 100%;
+}
+
+.description ul li {
+  float: left;
+  width: 10%;
+  min-width: 10%;
+}
+
+.description ul li a{
+   text-decoration: none;
+   background: white;
+   border-radius: 10px;
+   min-width: 10%;
 }

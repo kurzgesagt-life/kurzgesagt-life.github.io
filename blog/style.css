@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body p{
+    position: relative;
+    text-align: left;
+    left: 20%;
+    max-width: 50%;
+    overflow-wrap: break-word;
+    background: lightgreen;
+}
+body #bullet{
+    position: relative;
+    text-align: left;
+    left: 20%;
+    max-width: 48.5%; 
+    overflow-wrap: break-word;
+    background: lightgreen;
+    
+}
+
+body #Nobullet{
+    position: relative;
+    text-align: left;
+    left: 20%;
+    max-width: 48.5%;
+    list-style-type: none;
+    overflow-wrap: break-word;
+    background: green;
+}
+
+body #Dash{
+    position: relative;
+    text-align: left;
+    left: 20%;
+    max-width: 48.5%;
+    list-style-type: "- ";
+    overflow-wrap: break-word;
+    background: green;
+}
+
+body img{
+    position: relative;
+    object-position: center;
+    left: 50%;
+    margin-left: -240px;
+}

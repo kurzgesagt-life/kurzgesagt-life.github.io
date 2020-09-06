@@ -70,11 +70,12 @@ function addParticles(num) {
 }
 
 function destroy_animation() {
+    $("#canvas").fadeOut();
+    $(".title").fadeOut();
     stopAnimation = 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    if (title.parentNode != null) {title.parentNode.removeChild(title);}
     particles = [];
-    $(".description").fadeIn();
+    setTimeout(() => {$(".description").fadeIn("slow");}, 1000);
 }
 
 function init() {

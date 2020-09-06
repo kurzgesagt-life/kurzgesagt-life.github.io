@@ -6,6 +6,7 @@
     font-style: normal;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html,
 body {
@@ -58,7 +59,7 @@ span {
   top: 30%;
   display: none;
   color:  #fff;
-  font: "gilroyextrabold";
+  font-family: 'Lato', sans-serif;
   background: #002;
 
 }

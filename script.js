@@ -1,5 +1,5 @@
 // Controls
-const prtclMax = 500;
+const prtclMax = 100;
 const prtclRad = 1.5;
 const prtclDel = 80;
 const prtclSpd = 0.5;

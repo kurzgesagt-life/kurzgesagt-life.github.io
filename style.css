@@ -51,9 +51,13 @@ span {
   left: 30%;
   top: 30%;
   display: none;
-  color:  #fff;
+  color:  #000;
+<<<<<<< Updated upstream
   font-family: sans-serif;
   background: #002;
+=======
+  font: "Josefin Sans";
+>>>>>>> Stashed changes
 
 }
 

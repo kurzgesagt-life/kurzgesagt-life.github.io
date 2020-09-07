@@ -79,8 +79,7 @@ function destroy_animation() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles = [];
     $('body').animate({backgroundColor: 'white'},'slow');
-    document.head.appendChild(link);
-    setTimeout(() => {$(".description").fadeIn("slow");}, 1000);
+    setTimeout(() => {$(".description").fadeIn("slow");document.head.appendChild(link);}, 1000);
 }
 
 function init() {

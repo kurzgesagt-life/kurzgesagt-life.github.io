@@ -17,6 +17,7 @@ body {
 .title {
   width: 100%;
   position: relative;
+  color: #fff;
   left: 50%;
   top: 50%;
   z-index: 10;
@@ -55,23 +56,4 @@ h1 {
   font-family: sans-serif;
   font: "Josefin Sans";
 
-}
-
-.description ul{
-  list-style-type: none;
-  float: left;
-  width: 100%;
-}
-
-.description ul li {
-  float: left;
-  width: 10%;
-  min-width: 10%;
-}
-
-.description ul li a{
-   text-decoration: none;
-   background: white;
-   border-radius: 10px;
-   min-width: 10%;
 }

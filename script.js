@@ -70,12 +70,16 @@ function addParticles(num) {
 }
 
 function destroy_animation() {
+    var link = document.createElement('link');
+    link.rel = "stylesheet";
+    link.href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
     $("#canvas").fadeOut();
     $(".title").fadeOut();
     stopAnimation = 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles = [];
     $('body').animate({backgroundColor: 'white'},'slow');
+    document.head.appendChild(link);
     setTimeout(() => {$(".description").fadeIn("slow");}, 1000);
 }
 

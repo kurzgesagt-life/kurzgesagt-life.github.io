@@ -72,7 +72,7 @@ function addParticles(num) {
 function destroy_animation() {
     var link = document.createElement('link');
     link.rel = "stylesheet";
-    link.href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
+    link.href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
     $("#canvas").fadeOut();
     $(".title").fadeOut();
     stopAnimation = 1;

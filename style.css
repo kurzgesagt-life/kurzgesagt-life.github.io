@@ -11,9 +11,17 @@ body {
 body {
   font-family: "Josefin Sans", "Arial", sans-serif;
   background: #002;
-  color: #fff;
+  color: #002;
 }
-
+.navbarbox{
+  background: linear-gradient(to right,red, blue);
+}
+nav{
+  background: #002;
+  top: -5px;
+  justify-content: center;
+  
+}
 .title {
   width: 100%;
   position: relative;
@@ -49,11 +57,29 @@ h1 {
   text-align: left;
   text-anchor: middle;
   font-size: 30px;
-  left: 30%;
-  top: 30%;
+  top: 50%;
   display: none;
-  color:  #000;
+  color:  #fff;
   font-family: sans-serif;
   font: "Josefin Sans";
 
+}
+.gamedec{
+  position: relative;
+  top: 75px;
+  left: 5%;
+  max-width: 50%;
+}
+.newsTab{
+  position: relative;
+  top: 150px;
+  left: 5%;
+  background: rgb(0, 0, 46);
+  max-width: 50%;
+
+}
+.newsTab h3{
+  position: relative;
+  font-size: 60px;
+  left: 45%;
 }

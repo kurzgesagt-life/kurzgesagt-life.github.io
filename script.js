@@ -12,7 +12,7 @@ const prtclCol2 = "#f04";
 
 var title = document.getElementsByClassName('title')[0];
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = 500;
 let ctx = canvas.getContext("2d");
 var stopAnimation = 0;
 
@@ -78,13 +78,13 @@ function destroy_animation() {
     stopAnimation = 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles = [];
-    $('body').animate({backgroundColor: 'white'},'slow');
+    $('body').animate({backgroundColor: "#002"},'slow');
     setTimeout(() => {$(".description").fadeIn("slow");document.head.appendChild(link);}, 1000);
 }
 
 function init() {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = window.innerHeight - 102; // otherwise a scrollbar will apear
   clear();
   particles = [];
   addParticles(prtclMax);
@@ -110,7 +110,7 @@ function fade() {
   ctx.globalCompositeOperation = "source-over";
   ctx.globalAlpha = prtclFade;
   clear();
-  ctx.globalCompositeOperation = "lighten";
+  //ctx.globalCompositeOperation = "lighten";
   ctx.globalAlpha = 1;
 }
 

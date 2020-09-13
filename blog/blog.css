@@ -1,12 +1,19 @@
 
-.newsTab p{
+html,
+body{
+    background:#15151D;
+    color: white;
+    font-family: "Josefin Sans", "Arial", sans-serif
+}
+
+p{
     position: relative;
     text-align: left;
     max-width: 50%;
     overflow-wrap: break-word;
 
 }
-.newsTab #bullet{
+ #bullet{
     position: relative;
     text-align: left;
 
@@ -16,7 +23,7 @@
     
 }
 
-.newsTab #Nobullet{
+ #Nobullet{
     position: relative;
     text-align: left;
 
@@ -26,7 +33,7 @@
 
 }
 
-.newsTab #Dash{
+ #Dash{
     position: relative;
     text-align: left;
     max-width: 48.5%;
@@ -34,10 +41,26 @@
     overflow-wrap: break-word;
 
 }
-
-.newsTab img{
+img{
     position: relative;
     object-position: center;
     left: 5%;
     width: 800px;
+}
+
+.main{
+    background: #2A2A3B;
+    border: solid 1px #2A2A3B;
+    border-radius: 10px;
+    max-width: 70%;
+    
+}
+.other{
+    background: #2A2A3B;
+    border: solid 1px #2A2A3B;
+    border-radius: 10px;
+    max-width: 25%;
+    min-width: 25%;
+    left: 74%;
+    position: fixed;
 }

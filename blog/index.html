@@ -5,14 +5,23 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Life- In A Nutshell</title>
+    <link rel="stylesheet" href="./blog.css">
 </head>
 <body>
-      <div id="target">&nbsp;</div>
+    <div class="other">
+        here will other devlogs show
+
+    </div>
+    <div class="main">
+    <div id="target2">&nbsp;</div>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#target').load('blogitem1.html');
+            var urlParams = new URLSearchParams(window.location.search);
+            console.log(urlParams.get("blogindex"));
+            $('#target2').load('../blog/blogitem'+urlParams.get("blogindex") +'.html #blogitem');
         });
-
     </script>
+    </div>
+
 </body>
 </html>

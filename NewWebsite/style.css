@@ -25,9 +25,9 @@ body {
   width: 33.36%;
   min-width: 33.35%;
   
-  margin-top: -2px;
+  margin-top: 130px;
   margin-right: -5px;
-  margin-bottom: -5px;
+  margin-bottom: -20px;
   transform: rotate(180deg);
 }
 .title {
@@ -114,13 +114,6 @@ h1 {
   color: #eee;
 }
 
-iframe{
-  position: relative;
-  left: 68%;
-  top: -32.5%;
-  width: 20%;
-  height: 50%;
-}
 
 .gamedec{
   height: 30%;
@@ -143,7 +136,7 @@ iframe{
   font-size: 30px;
   left: 33.3%;
   position: relative;
-  top: -35%;
+  top: 10%;
   color: white;
   border-width: 10px;
   border: #15151D;

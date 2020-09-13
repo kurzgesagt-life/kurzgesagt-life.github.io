@@ -5,7 +5,7 @@ const prtclDel = 80;
 const prtclSpd = 0.5;
 const prtclFade = 0.04;
 
-const prtclColBg = "#15151D";
+const prtclColBg = "#0D0D16";
 const prtclCol0 = "#04f";
 const prtclCol1 = "#026";
 const prtclCol2 = "#f04";

@@ -116,7 +116,7 @@ h1 {
 
 
 .gamedec{
-  height: 30%;
+  min-height: 30%;
   width: 31.3%;
   font-size: 30px;
   left: 33.3%;

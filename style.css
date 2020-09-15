@@ -1,26 +1,36 @@
 
 
 html,
-body {
+body{
+  font-family: "Josefin Sans", "Arial", sans-serif;
   width: 100vw;
   height: 100vh;
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+
 body {
   font-family: "Josefin Sans", "Arial", sans-serif;
-  background: #002;
+  background: #15151D ;
   color: #002;
 }
-.navbarbox{
-  background: linear-gradient(to right,red, blue);
-}
-nav{
-  background: #002;
-  top: -5px;
-  justify-content: center;
+
+.decimgup img{
+  width: 33.35%;
+  margin-top: 0px;
+  margin-right: -5px;
+
   
+}
+.decimgbottom img{
+  width: 33.35%;
+  
+  margin-top: 130px;
+  margin-right: -5px;
+  margin-bottom: -20px;
+  transform: rotate(180deg);
 }
 .title {
   width: 100%;
@@ -33,6 +43,46 @@ nav{
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   user-select: none;
+}
+.buttons{
+  position: relative;
+  width: 100%;
+  top: 60%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: center;
+  
+}
+.buttons button{
+  width:100px;
+  min-width: 100px;
+  background: #891A74;
+  color: white;
+  height: 40px;
+  border: #891A74;
+  border-style: solid;
+  border-radius: 5px;
+  margin-right: 15%;
+
+}
+
+
+.AltTitle {
+  width: 100%;
+  position: relative;
+  color: #fff;
+
+  height: 100%;
+  top: 50%;
+  z-index: 10;
+
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  user-select: none;
+}
+canvas{
+  margin-top: -7%;
+
 }
 
 h1 {
@@ -53,33 +103,73 @@ h1 {
   color: #eee;
 }
 
-.description{
-  text-align: left;
-  text-anchor: middle;
-  font-size: 30px;
-  top: 50%;
-  display: none;
-  color:  #fff;
-  font-family: sans-serif;
-  font: "Josefin Sans";
 
-}
 .gamedec{
+  min-height: 30%;
+  width: 31.3%;
+  min-width: 500px;
+  font-size: 30px;
+  left: 33.3%;
   position: relative;
-  top: 75px;
-  left: 5%;
-  max-width: 50%;
+  top: 2%;
+  color: white;
+  border-width: 10px;
+  border: rgb(21,21,29, 0);
+  border-style: solid;
+  border-radius: 5px;
+  background: rgb(21,21,29, 0);
+  padding: 1%;
+
 }
 .newsTab{
+  height: auto;
+  font-size: 30px;
   position: relative;
-  top: 150px;
-  left: 5%;
-  background: rgb(0, 0, 46);
-  max-width: 50%;
+  top: 10%;
+  color: white;
+
 
 }
-.newsTab h3{
+.targets{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 7%;
+}
+.newstarget{
+  width: 25%;
+  background: rgb(11, 11, 15, 0.5);
+  border: rgb(0, 0, 0, 0) solid;
+  border-radius: 10px;
+
+
+  margin-right: 15%;
+}
+
+
+.newsTab b{
   position: relative;
   font-size: 60px;
   left: 45%;
+}
+
+.newstarget img{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  border: rgb(0, 0, 0, 0) solid;
+  border-radius: 10px
+
+}
+
+.newstarget b{
+  position: relative;
+  font-size: 60px;
+  left: 40%;
+}
+
+.newstarget h5{
+  position: relative;
+  font-size: 30px;
+  left: 30%;
 }

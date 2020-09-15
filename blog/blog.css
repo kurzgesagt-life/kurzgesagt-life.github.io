@@ -5,7 +5,27 @@ body{
     color: white;
     font-family: "Josefin Sans", "Arial", sans-serif
 }
-
+.buttons{
+    position: relative;
+    width: 100%;
+    top: 60%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .buttons button{
+    width:100px;
+    min-width: 100px;
+    background: #891A74;
+    color: white;
+    height: 40px;
+    border: #891A74;
+    border-style: solid;
+    border-radius: 5px;
+    margin-right: 15%;
+  
+  }
 p{
     position: relative;
     text-align: left;
@@ -45,7 +65,7 @@ img{
     position: relative;
     object-position: center;
     left: 5%;
-    width: 800px;
+    width: 70%;
 }
 
 .main{

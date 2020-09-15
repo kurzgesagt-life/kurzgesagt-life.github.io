@@ -1,70 +1,57 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Life- In A Nutshell
-  </title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./blog/blog.css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!--<script src="http://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-    google.load("jqueryui", "1.5.2");
-  </script>-->
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Life</h1>
+            <span id='Welcome'> In A Nutshell</span>
+          </div>
+          <div class="buttons">
+            <button onclick="scrolldown()">about</button>
+            <button onclick="window.location.href='https://discord.gg/6dUxhkB';">discord</button>
+            <button onclick="window.location.href='../blog/index.html?blogindex=1';">blog</button>
+            <button onclick="window.location.href='https://www.reddit.com/r/Life_In_A_Nutshell/new/';">reddit</button>
 
+        </div>
 
-</head>
-<body>
-<div class="description">
-  <div class="navbarbox">
-  <nav class="navbar navbar-expand-sm">
-    <h2> Life - In a Nutshell</h2>
-    <div class="navbarbutton">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">discord</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog/index.html">blog</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<div class="gamedec">
-    <b>life - in a Nutshell</b> is a game about game about the human race on the Kardashev scale,
-    where you can play bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-</div>
+          
+          <canvas id="canvas" width="200" height="200"></canvas>
+              <script src="./script.js"></script>
+        <div class="decimgup">
+        <img src="./3.png" alt="">
+        <img id="flip" src="./3.png" alt="">
+        <img src="./3.png" alt="">
+        </div> 
+        <div id="top" class="gamedec">
+            <b>life - in a Nutshell</b>
+            <br> is a fan made game about game about the human race on the Kardashev scale,
+            where you make decitions on what your civiliaztion should do.
+            this is not a game from kurzgesagt but a game made by fans.
+            the project is open soucre and avaible on <a href="https://github.com/orgs/kurzgesagt-life/">github </a>
+        </div>
+       
 
-<div class="newsTab">
-  <h3>News</h3>
-    <div id="target">&nbsp;</div>
-    <div id="target2">&nbsp;</div>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#target').load('blog/blogitem1.html');
-            $('#target2').load('blog/blogitem2.html');
-            //TODO: make it that multiple pages can be loaded in target
-            //TODO: read the number of files in the blog directory and make them all apear
-        });
-
-    </script>
-</div>
-
-
-
-
-</div>
-<div class="title">
-  <h1>Life</h1>
-  <span id='Welcome'> In A Nutshell</span>
-</div>
-
-<canvas id="canvas" width="200" height="200"></canvas>
-    <script src="./script.js"></script>
-
-</body>
+        <div class="newsTab">
+            <b>news</b>
+            <div class="targets">
+            <div class="newstarget"id="target">&nbsp;</div>
+            <div  class="newstarget"id="target2">&nbsp;</div>
+            <div  class="newstarget"id="target3">&nbsp;</div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#target').load('../blog/blogitem2.html #Front');
+                    $('#target2').load('../blog/blogitem2.html #Front');
+                    $('#target3').load('../blog/blogitem2.html #Front');
+                });
+            </script>
+            </div>
+        </div>
+        <div class="decimgbottom">
+            <img src="./3.png" alt="">
+            <img src="./3.png" alt="">
+            <img src="./3.png" alt="">
+        </div> 
 </html>

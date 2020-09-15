@@ -5,7 +5,7 @@ const prtclDel = 80;
 const prtclSpd = 0.5;
 const prtclFade = 0.04;
 
-const prtclColBg = "#002";
+const prtclColBg = "#0D0D16";
 const prtclCol0 = "#04f";
 const prtclCol1 = "#026";
 const prtclCol2 = "#f04";
@@ -69,22 +69,25 @@ function addParticles(num) {
   }
 }
 
-function destroy_animation() {
-    var link = document.createElement('link');
-    link.rel = "stylesheet";
-    link.href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
-    $("#canvas").fadeOut();
-    $(".title").fadeOut();
-    stopAnimation = 1;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles = [];
-    $('body').animate({backgroundColor: "#002"},'slow');
-    setTimeout(() => {$(".description").fadeIn("slow");document.head.appendChild(link);}, 1000);
+function scrolldown() {
+  if( window.scrollY < window.innerHeight) {
+    $('body,html').animate({scrollTop: window.innerHeight}, 800);
+    var doc = document.documentElement;
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    console.log(top);
+
+  }
+
+}
+
+function pageScroll() {
+  window.scrollBy(0,1);
+  scrolldelay = setTimeout(pageScroll,10);
 }
 
 function init() {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight - 102; // otherwise a scrollbar will apear
+  canvas.height = window.innerHeight;
   clear();
   particles = [];
   addParticles(prtclMax);
@@ -116,7 +119,7 @@ function fade() {
 
 window.onload = function () {
   window.onresize = () => init();
-  window.addEventListener('click',() => destroy_animation())
+
   init();
   loop();
 };
